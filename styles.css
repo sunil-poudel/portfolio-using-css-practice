@@ -27,9 +27,10 @@ div{
 }
 #headingCaption{
     font-size: 15pt;
+    font-weight: bold;
 }
 #headingDescription{
-    font-size: 13pt;
+    font-size: 15pt;
     align-items: center;
     justify-content: center;
 }
