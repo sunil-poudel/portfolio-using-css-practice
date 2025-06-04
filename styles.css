@@ -93,7 +93,7 @@ section#skills{
 }
 
 section#skills > div{
-    height: 200px;
+    height: 300px;
     width: 300px;
     background-color: blue;
     color: white;
@@ -106,8 +106,9 @@ section#skills > div{
 section > div#skillsFrontEnd{
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
+    "headingFrontend HeadingFrontend"
     "skillBoxA skillBoxB"
     "skillBoxC skillBoxD"
     "skillBoxE skillBoxF"
@@ -117,11 +118,15 @@ section > div#skillsFrontEnd{
 section > div#skillsBackend{
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:
+    "headingBackend HeadingBackend"
     "skillBox1 skillBox2"
     "skillBox3 skillBox4";
     gap: 3px;
+}
+div.sHeading{
+    width: 250px;
 }
 div#skillsBackend > div, div#skillsFrontEnd > div{
     justify-content: center;
