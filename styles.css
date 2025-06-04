@@ -87,8 +87,8 @@ div{
 }
 section#skills{
     display: flex;
-    flex-shrink: 1;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
 }
 
@@ -96,4 +96,13 @@ section#skills > div{
     height: 200px;
     width: 300px;
     background-color: blue;
+    color: white;
+    font-weight: bold;
+    font-size: 15pt;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+}
+div#skillsFrontEnd, div#skillsBackend{
+    display: grid;
 }
