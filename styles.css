@@ -1,12 +1,27 @@
 header{
+    display: grid;
+
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "boxHeadingImage boxHeadingName"
+    "boxHeadingImage boxHeadingCaption"
+    "boxHeadingDescription boxHeadingDescription"
+    "boxHeadingButton boxHeadingButton"
+    ;
+    gap: 5px;
+
+    justify-content: center;
 
 
 }
 div{
     display: flex;
     /*flex-wrap: wrap;*/
-    justify-content: center;
-    align-items: center;
+
+    /*width: 100px;*/
+    /*height: 100px;*/
+    border: black solid 1px;
 }
 #headingName{
     font-family: "DejaVu Sans", SansSerif, sans-serif;
@@ -17,4 +32,19 @@ div{
 }
 #headingDescription{
     font-size: 13pt;
+}
+#headingImage{
+    justify-content: center;
+    align-items: center;
+}
+#headingImage > img{
+    height: 150px;
+    width: fit-content;
+    border-radius: 50%;
+}
+#headingButton{
+    justify-content: center;
+}
+#headingButton > button{
+    width: 30%
 }
