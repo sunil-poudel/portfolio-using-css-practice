@@ -1,0 +1,20 @@
+header{
+
+
+}
+div{
+    display: flex;
+    /*flex-wrap: wrap;*/
+    justify-content: center;
+    align-items: center;
+}
+#headingName{
+    font-family: "DejaVu Sans", SansSerif, sans-serif;
+    font-size: 30pt;
+}
+#headingCaption{
+    font-size: 15pt;
+}
+#headingDescription{
+    font-size: 13pt;
+}
