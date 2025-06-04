@@ -130,7 +130,8 @@ section > div#skillsBackend{
     gap: 3px;
 }
 div.sHeading{
-    width: 250px;
+    width: 100%;
+    text-align: center;
 }
 div#skillsBackend > div, div#skillsFrontEnd > div{
     justify-content: center;
