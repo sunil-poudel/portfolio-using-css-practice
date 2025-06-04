@@ -30,9 +30,11 @@ div{
     font-weight: bold;
 }
 #headingDescription{
+    translate: -30% 0;
     font-size: 15pt;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 #headingImage{
     justify-content: center;
