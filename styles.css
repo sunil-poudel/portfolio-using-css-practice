@@ -134,3 +134,52 @@ div.sHeading{
 div#skillsBackend > div, div#skillsFrontEnd > div{
     justify-content: center;
 }
+
+section#connectWithMe{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    justify-content: center;
+    align-items: center;
+}
+section#connectWithMe > div{
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    display: grid;
+    text-align: center;
+}
+section#connectWithMe > div > a{
+    font-size: 20pt;
+    font-weight: bold;
+}
+section#connectWithMe > div > h1{
+    font-size: 25pt;
+}
+div#comment > label{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+
+    justify-content: center;
+    align-items: center;
+
+}
+div#comment > label > input, div#comment > label > textarea{
+    font-size: 15pt;
+    border-radius: 10px;
+}
+div#comment{
+    overflow: scroll;
+}
+div#comment > button{
+    font-size: 15pt;
+    margin: 5% 25%;
+}
+div#comment > button:hover{
+    scale:1.2;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+}
