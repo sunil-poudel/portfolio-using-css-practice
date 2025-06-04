@@ -104,7 +104,7 @@ section#skills > div{
     font-size: 15pt;
     padding: 5px;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
 }
 section > div#skillsFrontEnd{
     display: grid;
