@@ -103,6 +103,26 @@ section#skills > div{
     align-items: center;
     justify-content: center;
 }
-div#skillsFrontEnd, div#skillsBackend{
+section > div#skillsFrontEnd{
     display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "skillBoxA skillBoxB"
+    "skillBoxC skillBoxD"
+    "skillBoxE skillBoxF"
+    "skillBoxG skillBoxH";
+    gap: 3px;
+}
+section > div#skillsBackend{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "skillBox1 skillBox2"
+    "skillBox3 skillBox4";
+    gap: 3px;
+}
+div#skillsBackend > div, div#skillsFrontEnd > div{
+    justify-content: center;
 }
