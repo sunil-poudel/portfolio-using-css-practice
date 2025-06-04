@@ -102,9 +102,9 @@ section#skills > div{
     color: white;
     font-weight: bold;
     font-size: 15pt;
-    padding: 5px;
+    padding: 3px;
     align-items: center;
-    justify-content: left;
+    justify-content: center;
 }
 section > div#skillsFrontEnd{
     display: grid;
@@ -117,6 +117,7 @@ section > div#skillsFrontEnd{
     "skillBoxE skillBoxF"
     "skillBoxG skillBoxH";
     gap: 3px;
+    justify-content: left;
 }
 section > div#skillsBackend{
     display: grid;
