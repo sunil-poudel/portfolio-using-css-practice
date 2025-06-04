@@ -82,8 +82,11 @@ div{
     }
 }
 
+
 #skillsHeading{
     text-align: center;
+    font-size: 30pt;
+    font-family: "Noto Sans Armenian SemiBold", sans-serif;
 }
 section#skills{
     display: flex;
