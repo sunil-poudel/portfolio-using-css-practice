@@ -6,22 +6,20 @@ header{
     grid-template-areas:
     "boxHeadingImage boxHeadingName"
     "boxHeadingImage boxHeadingCaption"
-    "boxHeadingDescription boxHeadingDescription"
+    "boxHeadingImage boxHeadingDescription"
     "boxHeadingButton boxHeadingButton"
     ;
     gap: 5px;
 
     justify-content: center;
+    background-color: grey;
 
 
 }
 div{
     display: flex;
-    /*flex-wrap: wrap;*/
-
-    /*width: 100px;*/
-    /*height: 100px;*/
-    border: black solid 1px;
+    /*border: black solid 1px;*/
+    padding: 5px;
 }
 #headingName{
     font-family: "DejaVu Sans", SansSerif, sans-serif;
@@ -32,19 +30,53 @@ div{
 }
 #headingDescription{
     font-size: 13pt;
+    align-items: center;
+    justify-content: center;
 }
 #headingImage{
     justify-content: center;
     align-items: center;
 }
 #headingImage > img{
-    height: 150px;
+    height: 200px;
     width: fit-content;
     border-radius: 50%;
+    text-align: center;
+    animation: 3s float ease-in-out infinite;
+    animation-play-state: paused;
+}
+#headingImage > img:hover{
+    animation-play-state: running;
 }
 #headingButton{
     justify-content: center;
 }
 #headingButton > button{
-    width: 30%
+    width: 30%;
+    font-size: 15pt;
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    transition: 200ms ease-in-out;
+}
+#headingButton > button:hover{
+    scale: 1.2;
+    border-radius: 50%;
+}
+@keyframes float{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-0.5cm);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(0.5cm);
+    }
+    100%{
+        transform: translateX(0);
+    }
 }
