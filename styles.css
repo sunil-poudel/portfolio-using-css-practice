@@ -97,7 +97,7 @@ section#skills{
 
 section#skills > div{
     height: 300px;
-    width: 450px;
+    width: 300px;
     background-color: blue;
     color: white;
     font-weight: bold;
@@ -108,7 +108,7 @@ section#skills > div{
 }
 section > div#skillsFrontEnd{
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 70% 30%;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
     "headingFrontend HeadingFrontend"
